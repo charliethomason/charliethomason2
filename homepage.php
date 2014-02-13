@@ -24,7 +24,7 @@ Template Name: Homepage
 </div>
 
 <section id="home-blog" class="home-section">
-	<h2 class="home-head"><a href="/news"> News &amp; Events </a></h2>
+	<h2 class="home-head"><a href="javascript:void(0)"> Blog </a></h2>
 	<div class="blog ideas-blog">
 
 		<div class="ideas-list">
@@ -56,7 +56,7 @@ Template Name: Homepage
 </section>
 
 <section id="home-art" class="home-section">
-	<h2 class="home-head"><a href="/news"> News &amp; Events </a></h2>
+	<h2 class="home-head"><a href="javascript:void(0)"> Gallery </a></h2>
 	<div class="art-item-wrap">
 		<?php 
 		  $temp = $wp_query; 

@@ -23,60 +23,11 @@ Template Name: Homepage
 	</section>
 </div>
 
-
-<section id="home-art" class="home-section">
-	<h2 class="home-head"><a href="/news"> News &amp; Events </a></h2>
-	<div id="art-item-wrap">
-		<?php 
-		  $temp = $wp_query; 
-		  $wp_query = null; 
-		  $wp_query = new WP_Query(); 
-		  $wp_query->query('showposts=100&post_type=art'.'&paged='.$paged); 
-		  $count = 1;
-
-		  while ($wp_query->have_posts()) : $wp_query->the_post(); 
-		?>
-		<?php	
-			$custom = get_post_custom($post->ID);
-			$medium = $custom["medium"][0];
-			$print = $custom["print"][0];
-			$thumb_id = get_post_thumbnail_id();
-			$thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
-		?>
-		<div id="art-item-<?php echo $count; ?>" class="art-item">
-			<a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?> </a>
-			<div class="info">
-				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<?php if($medium != "") { ?>
-					<p class="catdate"><strong>Medium:</strong> <?=$medium?></p>
-				<?php } ?>
-				<p><a class="btn" href="<?php the_permalink(); ?>">More Info</a> 
-					<a class="btn secondary-btn enlarge-btn" href="<?php echo $thumb_url[0]; ?>">Enlarge</a>
-				</p>
-
-			</div>
-			<div class="clear"></div>
-		</div>
-		<?php 
-			$count++;
-			endwhile; 
-			wp_reset_query();
-		?>
-		<div class="sizer">&nbsp;</div>
-		<div class="clear"></div>
-	</div>
-</section>
-
-
 <section id="home-blog" class="home-section">
 	<h2 class="home-head"><a href="/news"> News &amp; Events </a></h2>
-	<div class="ideas-list">
-		<div class="blog-nav-wrap">
-			 <?php //get_search_form(); ?> 
-			<div class="clear"></div>
-		</div>
+	<div class="blog ideas-blog">
 
-		<div class="blog-posts">
+		<div class="ideas-list">
 			<?php 
 				query_posts( 'posts_per_page=5'); 
 				$count = 1;
@@ -101,6 +52,47 @@ Template Name: Homepage
 			?>
 			<?php wp_reset_query(); ?>
 		</div>
+	</div>
+</section>
+
+<section id="home-art" class="home-section">
+	<h2 class="home-head"><a href="/news"> News &amp; Events </a></h2>
+	<div class="art-item-wrap">
+		<?php 
+		  $temp = $wp_query; 
+		  $wp_query = null; 
+		  $wp_query = new WP_Query(); 
+		  $wp_query->query('showposts=100&post_type=art'.'&paged='.$paged); 
+		  $count = 1;
+
+		  while ($wp_query->have_posts()) : $wp_query->the_post(); 
+		?>
+		<?php	
+			$custom = get_post_custom($post->ID);
+			$medium = $custom["medium"][0];
+			$print = $custom["print"][0];
+			$thumb_id = get_post_thumbnail_id();
+			$thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
+		?>
+		<div id="art-item-<?php echo $count; ?>" class="art-item">
+			<a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?> </a>
+			<div class="info">
+				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				<?php if($medium != "") { ?>
+					<p class="catdate"><strong>Medium:</strong> <?=$medium?></p>
+				<?php } ?>
+				<p><a class="btn" href="<?php the_permalink(); ?>">More Info</a> 
+					<a class="btn secondary-btn enlarge-btn" href="<?php echo $thumb_url[0]; ?>">Enlarge</a>
+				</p>
+
+			</div>
+		</div>
+		<?php 
+			$count++;
+			endwhile; 
+			wp_reset_query();
+		?>
+		<div class="clear"></div>
 	</div>
 </section>
    

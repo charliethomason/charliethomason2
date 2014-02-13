@@ -12,8 +12,6 @@ function bleachwave_add_scripts() {
 	wp_deregister_script( 'jquery' );
 	wp_register_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', false, '1.7.1', true );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array( 'jquery' ), null, true );
-	wp_enqueue_script( 'imagesLoaded', get_template_directory_uri() . '/js/imagesloaded.pkgd.min.js', array( 'masonry' ), null, true );
     wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/inc/lightbox/js/jquery.fancybox.pack.js', array( 'jquery' ), null, true );
     wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/inc/lightbox/js/lightbox.js', array( 'fancybox' ), null, true );
     wp_enqueue_script( 'bleachwave', get_template_directory_uri() . '/js/bleachwave.js', array( 'jquery' ), null, true );

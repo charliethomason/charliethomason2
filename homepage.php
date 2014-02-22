@@ -23,28 +23,63 @@ Template Name: Homepage
 	</section>
 </div>
 
-<section id="home-blog" class="home-section">
-	<h2 class="home-head"><a href="javascript:void(0)"> Blog </a></h2>
-	<div class="blog ideas-blog">
+<?php /*
+<section id="home-art" class="home-section">
+	<h2 class="home-head"><a href="/galleries"> Gallery </a></h2>
+	<ul id="art-cells">
+		<?php 
+			//$loop = new WP_Query(array('post_type' => 'gallery', 'posts_per_page' => 10)); 
+			//$count = 0;
+		?>
+		<?php //while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<?php	
+			//$custom = get_post_custom($post->ID);
+			//$medium = $custom["medium"][0];
+			//$print = $custom["print"][0];
+			//$count++;
+		?>
+		<li class="art-cell" id="art-cell-<?=//$count;?>">
+			<a class="art-cell-img" href="<?php //the_permalink(); ?>"><?php //the_post_thumbnail('medium'); ?></a>
+			<div class="art-cell-meta">
+				<h3><a href="<?php //the_permalink(); ?>"><?php //the_title(); ?></a></h3>
+				<p class="catdate"><strong><?php //the_time('D, M j, Y'); ?></strong><br><em><?=//$medium?></em></p>
+				<p><a class="btn blue-btn" href="<?php //the_permalink(); ?>">More Info</a></p>
+			</div>
+		</li>
+		<?php //endwhile; ?>
+		<?php //wp_reset_query(); ?>
+		<div class="clear"></div>
+	</ul>
+</section>
+*/ ?>
 
-		<div class="ideas-list">
+<?php /*
+<section id="home-blog" class="home-section">
+	<h2 class="home-head"><a href="/news"> News &amp; Events </a></h2>
+	<div class="blog blog-home">
+		<div class="blog-nav-wrap">
+			 <?php //get_search_form(); ?> 
+			<div class="clear"></div>
+		</div>
+
+		<div class="blog-posts">
 			<?php 
 				query_posts( 'posts_per_page=5'); 
 				$count = 1;
 			?>
 	        <?php while(have_posts()) : the_post(); ?>
-	        <article class="idea">
-		        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<ul class="catdate">
-					<li><?php the_time('D, M j, Y'); ?></li>
-						<?php 
-							$meta = get_post_meta($post->ID,'place',true);
-							if ($meta != '') {
-								echo '<li>&#8226; '.get_post_meta($post->ID,'place',true).'</li>';
-							} 
-						?>
-					<li>&#8226; <?php the_category(', '); ?></li>
-				</ul>
+			<article class="post">
+		        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+				<p class="catdate"><strong><?php the_time('D, M j, Y'); ?></strong></p>
+				<?php
+					global $more;
+					$more = 0;
+				?>
+				<?php if ($count == 1): ?>
+					<div class="entry">
+						<?php the_content('Continue Reading'); ?>
+					</div>
+				<?php endif; ?>
 			</article>
 			<?php 
 				$count++;
@@ -54,46 +89,6 @@ Template Name: Homepage
 		</div>
 	</div>
 </section>
-
-<section id="home-art" class="home-section">
-	<h2 class="home-head"><a href="javascript:void(0)"> Gallery </a></h2>
-	<div class="art-item-wrap">
-		<?php 
-		  $temp = $wp_query; 
-		  $wp_query = null; 
-		  $wp_query = new WP_Query(); 
-		  $wp_query->query('showposts=100&post_type=art'.'&paged='.$paged); 
-		  $count = 1;
-
-		  while ($wp_query->have_posts()) : $wp_query->the_post(); 
-		?>
-		<?php	
-			$custom = get_post_custom($post->ID);
-			$medium = $custom["medium"][0];
-			$print = $custom["print"][0];
-			$thumb_id = get_post_thumbnail_id();
-			$thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
-		?>
-		<div id="art-item-<?php echo $count; ?>" class="art-item">
-			<a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?> </a>
-			<div class="info">
-				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<?php if($medium != "") { ?>
-					<p class="catdate"><strong>Medium:</strong> <?=$medium?></p>
-				<?php } ?>
-				<p><a class="btn" href="<?php the_permalink(); ?>">More Info</a> 
-					<a class="btn secondary-btn enlarge-btn" href="<?php echo $thumb_url[0]; ?>">Enlarge</a>
-				</p>
-
-			</div>
-		</div>
-		<?php 
-			$count++;
-			endwhile; 
-			wp_reset_query();
-		?>
-		<div class="clear"></div>
-	</div>
-</section>
+*/ ?>
    
 <?php get_footer(); ?>

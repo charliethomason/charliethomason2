@@ -80,4 +80,31 @@ $(document).ready(function() {
 			$('.cat-btn').focus();
 		}
 	});
+	// If Masonry exists
+	if(typeof($.fn.masonry) != "undefined") {
+		// Masonry for About page
+		$("#facts-box").masonry({
+			columnWidth: '.fact',
+			gutter: '.sizer'
+		});
+		// Masonry for Art Tags page
+		$("#art-tags").masonry({
+			columnWidth: '.tags',
+			gutter: '.sizer'
+		});
+		// Masonry for Gallery & Archive pages
+		var $container = $("#art-item-wrap");
+		$container.imagesLoaded(function() {
+			$container.masonry({
+				columnWidth: '.art-item',
+				gutter: '.sizer'
+			});
+		});
+	}
+	// Accessibility for art items
+	$('body').on('focus','.art-item',function(e) {
+		$(this).addClass('hovered');
+	}).on('blur','.art-item',function(e) {
+		$(this).removeClass('hovered');
+	});
 });

@@ -13,7 +13,7 @@
 		$iso = $custom["iso"][0];
 	?>
 	<article id="art-post-<?php the_ID(); ?>" class="post art-post">
-		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<p class="catdate"><?php print $medium; ?></p>
 
 		<div class="entry"> 

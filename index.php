@@ -1,13 +1,15 @@
 <?php get_header(); ?>
     <div class="blog ideas-blog">
 
+    	<h2 class="index-head">Blog</h2>
+
 		<div class="nav-wrap">
 			 <?php get_search_form(); ?> 
 			<nav class="search-nav" role="navigation">
 				<span id="search-nav-menu" role="menubar">
 					<a href="#" class="btn secondary-btn cat-btn" aria-haspopup="true" aria-controls="blog-menu" role="menuitem">Categories</a>
                     <ul class="blog-menu" role="menu" aria-hidden="true" aria-live="polite" id="blog-menu">
-                        <li class="cat-item" role="menuitem"><a href="/ideas">Everything</a></li>
+                        <li class="cat-item" role="menuitem"><a href="<?php echo get_option('home'); ?>">Everything</a></li>
                         <?php 
                             $args = array(
                                 'type' => 'post',

@@ -4,19 +4,19 @@
 
 	<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 	<?php /* If this is a category archive */ if (is_category()) { ?>
-		<h1 class="index-head">Category: <span id="category-title"><?php single_cat_title(); ?></span></h1>
+		<h2 class="index-head">Category: <span id="category-title"><?php single_cat_title(); ?></span></h2>
 	<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-		<h1 class="index-head">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h1>
+		<h2 class="index-head">Posts Tagged &#8216;<?php single_tag_title(); ?>&#8217;</h2>
 	<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-		<h1 class="index-head">Archive for <?php the_time('F jS, Y'); ?>:</h1>
+		<h2 class="index-head">Archive for <?php the_time('F jS, Y'); ?>:</h2>
 	<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-		<h1 class="index-head">Archive for <?php the_time('F, Y'); ?>:</h1>
+		<h2 class="index-head">Archive for <?php the_time('F, Y'); ?>:</h2>
 	<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-		<h1 class="index-head">Archive for <?php the_time('Y'); ?>:</h1>
+		<h2 class="index-head">Archive for <?php the_time('Y'); ?>:</h2>
 	<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-		<h1 class="index-head">Author Archive</h1>
+		<h2 class="index-head">Author Archive</h2>
 	<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-		<h1 class="index-head">Blog Archives</h1>
+		<h2 class="index-head">Blog Archives</h2>
 	<?php } ?>
 
 	<div class="nav-wrap">
@@ -32,7 +32,7 @@
 				<span id="search-nav-menu" role="menubar">
 					<a href="#" class="btn secondary-btn cat-btn" aria-haspopup="true" aria-controls="blog-menu" role="menuitem"><?php if (is_tag()) { echo 'Tags'; } else { echo 'Categories'; } ?></a>
 					<ul class="blog-menu<?php if(is_tag()) echo ' tag-menu' ?>" role="menu" aria-hidden="true" aria-live="polite" id="blog-menu">
-						<li class="cat-item" role="menuitem"><a href="/ideas">Everything</a></li>
+						<li class="cat-item" role="menuitem"><a href="<?php echo get_option('home'); ?>">Everything</a></li>
 						<?php 
 							$args = array(
 								'type' => 'post',
@@ -84,7 +84,7 @@
 				<?php } else { ?>
 
 					<article class="post">
-					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<p class="catdate"><?php the_time('D, M j, Y'); ?><?php if (!is_tag()) { ?>• <?php the_category(', '); ?><?php } ?></p>
 		 
 						<div class="entry">

@@ -6,7 +6,7 @@ Template Name: Gallery
 <?php get_header(); ?>
 <div class="blog blog-gallery">
 
-	<h1 class="index-head">Art <span class="fancy-amp">&amp;</span> Photo Gallery</h1>
+	<h2 class="index-head">Art <span class="fancy-amp">&amp;</span> Photo Gallery</h2>
 
 	<div class="nav-wrap">
 		 <?php get_search_form(); ?> 

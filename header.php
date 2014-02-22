@@ -46,9 +46,8 @@
 			</ul>
 			<ul class="nav-social">
 				<li class="nav-twitter"><a href="http://twitter.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Twitter</span></a></li>
-				<li class="nav-linkedin"><a href="http://linkedin.com/in/charlesthomason" class="contact-btn" rel="nofollow" target="_blank"><span>LinkedIn</span></a></li>
-				<li class="nav-instagram"><a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Instagram</span></a></li>
 				<li class="nav-flickr"><a href="http://flickr.com/recycledfilm" class="contact-btn" rel="nofollow" target="_blank"><span>Flickr</span></a></li>
+				<li class="nav-instagram"><a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Instagram</span></a></li>
 			</ul>
 			<div class="clear"></div>
 		</div>

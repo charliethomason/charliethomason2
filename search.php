@@ -2,7 +2,7 @@
  
     <div class="blog ideas-blog search-blog">
 
-    	<h1 class="index-head">Search Results for &#8216;<?php the_search_query(); ?>&#8217;</h2>
+    	<h2 class="index-head">Search Results for &#8216;<?php the_search_query(); ?>&#8217;</h2>
 
 		<div class="nav-wrap">
 			 <?php get_search_form(); ?> 
@@ -15,7 +15,7 @@
         <?php while(have_posts()) : the_post(); ?>
          
         <article class="post">
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 		<p class="catdate"><?php the_time('D, M j, Y'); ?></p>
             
 			<div class="entry">  

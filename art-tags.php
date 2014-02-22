@@ -6,7 +6,7 @@ Template Name: Art Tag Page
 <?php get_header(); ?>
 <div class="blog tag-page">
 
-	<h1 class="index-head">Art <span class="fancy-amp">&amp;</span> Photo Gallery Tags</h1>
+	<h2 class="index-head">Art <span class="fancy-amp">&amp;</span> Photo Gallery Tags</h2>
 
 	<p><a href="/art" class="btn secondary-btn">&laquo; Return to Main Gallery</a></p>
 

@@ -8,7 +8,7 @@ Template Name: Store
     <div class="blog store">
 
     	<article class="post">
-    		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+    		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
     		<div class="entry">
     			<p>Coming soon!</p>
     			<p>For now, check out these totally awesome links:</p>

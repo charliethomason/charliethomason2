@@ -31,17 +31,14 @@
 		<div id="primary-nav">
 			<a href="#" role="button" id="hamburger">Menu</a>
 			<ul class="main-nav">
-				<li id="nav-logo"<?php if (is_front_page()) { ?> class="active"<?php } ?>>
-					<a href="<?php echo get_option('home'); ?>">Home</a>
-				</li>
-				<li<?php if (is_page(array('About Charlie Thomason', 'Resume', 'Contact'))) { ?> class="active"<?php } ?>>
-					<a href="/about">About</a>
+				<li<?php if (is_home() || is_singular('post') || is_category()) { ?> class="active"<?php } ?>>
+					<a href="<?php echo get_option('home'); ?>">Blog</a>
 				</li>
 				<li<?php if (is_page_template('art.php') || is_singular('art') || is_tag() || is_page_template('art-tags.php')) { ?> class="active"<?php } ?>>
 					<a href="/art">Art</a>
 				</li>
-				<li<?php if (is_home() || is_singular('post') || is_category()) { ?> class="active"<?php } ?>>
-					<a href="/ideas">Ideas</a>
+				<li<?php if (is_page(array('About Charlie Thomason', 'Resume', 'Contact'))) { ?> class="active"<?php } ?>>
+					<a href="/about">About</a>
 				</li>
 				<li<?php if (is_page_template('store.php')) { ?> class="active"<?php } ?>>
 					<a href="/store">Store</a>

@@ -310,6 +310,7 @@ body {
 }
 
 ul.main-nav {
+	border-left:1px solid #9CCB85;
 	border-right:1px solid #253B06;
 	float:left;
 	list-style:none;
@@ -417,25 +418,6 @@ ul.main-nav li:hover ul {
 	visibility:visible;
 	opacity:1;
 	transition-delay:0s;
-}
-
-li#nav-logo {
-	border-left:medium none;
-}
-
-#nav-logo a {
-	background: url('images/chicago-y-hamburger01.png') no-repeat scroll center center transparent;
-	border-top:medium none;
-    height: 40px;
-    padding:13px;
-    text-indent: -9999px;
-    width: 40px;
-}
-
-#nav-logo a:hover {
-	background-position: center 8px;
-	border-top:5px solid #fff;
-	padding:8px 13px 13px;
 }
 
 ul.nav-social {
@@ -1739,16 +1721,7 @@ footer .fancy-amp {
 		text-shadow:none;
 		text-transform:none;
 	}
-	#nav-logo a {
-		background-color:transparent;
-		background-image:none;
-		height:auto;
-		padding:10px;
-		text-indent:0;
-		width:auto;
-	}
-	ul.main-nav > li > a:hover,
-	#nav-logo a:hover {
+	ul.main-nav > li > a:hover {
 		background-color: #539313;
 		border-top:medium none;
 		color:#fff;

@@ -17,9 +17,9 @@
 </head>
 <body>
  
-<header id="header" role="banner">
+<header id="header">
 	
-	<h1>
+	<h1 role="banner">
 		<a id="logo" class="hidetext" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
 		<a id="mobile-logo" class="hidetext" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
 			<img src="<?php bloginfo('template_directory'); ?>/images/ctlogo03.gif" alt="Charlie Thomason logo">
@@ -32,12 +32,12 @@
 			<a href="#" role="button" id="hamburger">Menu</a>
 			<ul class="main-nav">
 				<li<?php if (is_home() || is_singular('post') || is_category()) { ?> class="active"<?php } ?>>
-					<a href="<?php echo get_option('home'); ?>">Blog</a>
+					<a href="<?php echo get_option('home'); ?>">Home</a>
 				</li>
 				<li<?php if (is_page_template('art.php') || is_singular('art') || is_tag() || is_page_template('art-tags.php')) { ?> class="active"<?php } ?>>
 					<a href="/art">Art</a>
 				</li>
-				<li<?php if (is_page(array('About Charlie Thomason', 'Resume', 'Contact'))) { ?> class="active"<?php } ?>>
+				<li<?php if (is_page_template('about.php')) { ?> class="active"<?php } ?>>
 					<a href="/about">About</a>
 				</li>
 				<li<?php if (is_page_template('store.php')) { ?> class="active"<?php } ?>>

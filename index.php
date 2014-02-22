@@ -1,8 +1,6 @@
 <?php get_header(); ?>
     <div class="blog ideas-blog">
 
-    	<h1 class="index-head">Ideas</h1>
-
 		<div class="nav-wrap">
 			 <?php get_search_form(); ?> 
 			<nav class="search-nav" role="navigation">

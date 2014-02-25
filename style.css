@@ -1062,6 +1062,16 @@ aside.details-box li:first-child {
 
 /***************************/
 
+/* BEGIN Flickr Gallery Styles */
+
+.flickr-item {
+	display:inline-block;
+}
+
+/* END Flickr Gallery Styles */
+
+/***************************/
+
 /* BEGIN Search/ Search Nav / Blog Menu */
 
 .search-blog article.post {

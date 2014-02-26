@@ -16,8 +16,8 @@ function bleachwave_add_scripts() {
 	wp_enqueue_script( 'imagesLoaded', get_template_directory_uri() . '/js/imagesloaded.pkgd.min.js', array( 'masonry' ), null, true );
     wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/inc/lightbox/js/jquery.fancybox.pack.js', array( 'jquery' ), null, true );
     wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/inc/lightbox/js/lightbox.js', array( 'fancybox' ), null, true );
-    if (is_page_template('flickr.php')) { wp_enqueue_script( 'flickr', get_template_directory_uri() . '/js/flickr.js', array('jquery'), null, true); }
     wp_enqueue_script( 'bleachwave', get_template_directory_uri() . '/js/bleachwave.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'flickr', get_template_directory_uri() . '/js/flickr.js', array('jquery'), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'bleachwave_add_scripts' );
 

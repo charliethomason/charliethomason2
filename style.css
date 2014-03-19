@@ -1135,6 +1135,91 @@ section.tags ul.taglist li {
 
 /***************************/
 
+/* BEGIN Loading animation */
+
+#flickr-loading {
+	padding:20px 0 0;
+}
+#circleG{
+	margin:0 auto;
+	width:149.33333333333334px;
+}
+
+.circleG{
+	background-color:#FFFFFF;
+	float:left;
+	height:32px;
+	margin-left:17px;
+	width:32px;
+	-moz-animation-name:bounce_circleG;
+	-moz-animation-duration:1.2000000000000002s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:linear;
+	-moz-border-radius:21px;
+	-webkit-animation-name:bounce_circleG;
+	-webkit-animation-duration:1.2000000000000002s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:linear;
+	-webkit-border-radius:21px;
+	animation-name:bounce_circleG;
+	animation-duration:1.2000000000000002s;
+	animation-iteration-count:infinite;
+	animation-direction:linear;
+	border-radius:21px;
+}
+
+#circleG_1{
+	margin-left:0;
+	-moz-animation-delay:0.24000000000000005s;
+	-webkit-animation-delay:0.24000000000000005s;
+	animation-delay:0.24000000000000005s;
+}
+
+#circleG_2{
+	-moz-animation-delay:0.56s;
+	-webkit-animation-delay:0.56s;
+	animation-delay:0.56s;
+}
+
+#circleG_3{
+	-moz-animation-delay:0.72s;
+	-webkit-animation-delay:0.72s;
+	animation-delay:0.72s;
+}
+
+@-moz-keyframes bounce_circleG{
+	0%{
+	}
+	50%{
+		background-color:#000000;
+	}
+	100%{
+	}
+}
+
+@-webkit-keyframes bounce_circleG{
+	0%{
+	}
+	50%{
+		background-color:#000000;
+	}
+	100%{
+	}
+}
+
+@keyframes bounce_circleG{
+	0%{
+	}
+	50%{
+		background-color:#000000;
+	}
+	100%{
+	}
+}
+/* END Loading animation */
+
+/***************************/
+
 /* BEGIN Store */
 
 .blog.store {

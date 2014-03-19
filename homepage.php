@@ -79,7 +79,14 @@ Template Name: Homepage
 	<section id="home-flickr" class="home-section">
 		<h2 class="home-head"><a href="http://flickr.com/recycledfilm" target="_blank" rel="nofollow">Flickr <span class="fancy-amp">&amp;</span> Instagram Gallery</a></h2>
 		<div id="flickr-wrap">
-			<span id="flickr-loading">Loading...</span>
+			<div id="flickr-loading">
+				<div id="circleG">
+					<div id="circleG_1" class="circleG"> </div>
+					<div id="circleG_2" class="circleG"> </div>
+					<div id="circleG_3" class="circleG"> </div>
+					<div class="clear"></div>
+				</div>
+			</div>
 		</div>
 	</section>
 

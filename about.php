@@ -5,56 +5,51 @@ Template Name: About Page
 ?>
 <?php get_header(); ?>
 
-<div class="about-intro">
-	<section class="blog" role="region">
 
+	<section id="about-intro" class="about-section">
 		<?php if(have_posts()) : ?>
 		<?php while(have_posts()) : the_post(); ?>
-
-				<h2><a href="#"><?php the_title(); ?></a></h2>
-
-				<div class="entry introcontent">
-
+			<h2 class="home-head"><?php the_title(); ?></h2>
+			<div class="blog">
+				<div class="entry about-intro">
 					<?php the_content(); ?>
-
 				</div>
-
-				<div class="clear"></div>
-
+			</div>
+			<div class="clear"></div>
 		<?php endwhile; ?>
 		<?php endif; ?>
 		<?php wp_reset_query(); ?>
-
 	</section>
-</div>
 
-	<section id="about-skills" class="about-section" role="region">
-		<h2 class="home-head"><a href="#"> Web Development Skills </a></h2>
+	<section id="about-skills" class="about-section">
+		<h2 class="home-head">Web Development Skills</h2>
 
-		<div id="skills-box" class="blog">
-			<ul>
-				<div class="skills-column">
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/html5-02.png" alt="HTML5 logo" />HTML5</li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/css3-01.png" alt="CSS3 logo" />CSS</li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/js-01.png" alt="JavaScript logo" />JavaScript, jQuery, AJAX</li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/php-01.png" alt="PHP logo" />PHP</li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/sass-01.png" alt="Sass logo" />HAML, Sass, LESS</li>
-				</div>
-				<div class="skills-column second">
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/drupal-01.png" alt="Drupal logo" />Drupal</li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/wordpress-01.png" alt="WordPress logo" />WordPress</li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/ror-01.png" alt="Ruby on Rails logo" />Ruby on Rails (beginner)</li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/git-01.png" alt="Git logo" />Version Control (Git, SVN)</li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/ps-01.png" alt="Photoshop logo" />Adobe Creative Suite</li>
-				</div>
-				<div class="clear"></div>
-			</ul>
+		<div class="blog">
+			<div id="skills-box">
+				<ul>
+					<div class="skills-column">
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/html5-02.png" alt="HTML5 logo" />HTML5</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/css3-01.png" alt="CSS3 logo" />CSS</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/js-01.png" alt="JavaScript logo" />JavaScript, jQuery, AJAX</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/php-01.png" alt="PHP logo" />PHP</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/sass-01.png" alt="Sass logo" />HAML, Sass, LESS</li>
+					</div>
+					<div class="skills-column second">
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/drupal-01.png" alt="Drupal logo" />Drupal</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/wordpress-01.png" alt="WordPress logo" />WordPress</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/ror-01.png" alt="Ruby on Rails logo" />Ruby on Rails (beginner)</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/git-01.png" alt="Git logo" />Version Control (Git, SVN)</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/ps-01.png" alt="Photoshop logo" />Adobe Creative Suite</li>
+					</div>
+					<div class="clear"></div>
+				</ul>
+			</div>
 		</div>
 
 	</section>
 
-	<section id="about-education" class="about-section" role="region">
-		<h2 class="home-head"><a href="#"> Education </a></h2>
+	<section id="about-education" class="about-section">
+		<h2 class="home-head">Education</h2>
 
 		<div id="education-box" class="blog">
 			<ul>
@@ -86,8 +81,8 @@ Template Name: About Page
 		</div>
 	</section>
 
-	<section id="about-facts" class="about-section" role="region">
-		<h2 class="home-head"><a href="#"> Random Facts </a></h2>
+	<section id="about-facts" class="about-section">
+		<h2 class="home-head">Random Facts</h2>
 		<div id="facts-box" class="blog">
 			<div class="fact italic-fact" tabindex="0">I met my girlfriend Amanda at the 2009 Sundance Film Festival in Park City, Utah. We returned to the festival again in 2010 and 2011.</div>
 			<div class="fact" tabindex="0">I hope to be remembered as creative, unique, positive, nice, and intelligent.</div>

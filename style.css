@@ -479,11 +479,26 @@ ul.nav-social a {
 
 /* BEGIN About page */
 
+.about-section .blog {
+	background-color: #fff;
+	padding:20px 2.4%;
+}
+
+.about-section .home-head {
+	background-color: #000;
+	color:#fff;
+	line-height:1;
+	margin:0 auto;
+	max-width:960px;
+	padding:10px 0;
+	text-transform: uppercase;
+}
+
 .about-intro {
 	color:#222;
 	font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
-	margin:10px auto 0;
-	padding:30px;
+	margin:0 auto;
+	padding:0 30px;
 	width:67.57%; /* 650 / 962 */
 }
 
@@ -496,6 +511,7 @@ ul.nav-social a {
 }
 
 #skills-box {
+	margin:0 auto;
 	max-width:700px;
 }
 
@@ -516,11 +532,6 @@ ul.nav-social a {
 #skills-box li img {
 	padding-right:7px;
 	vertical-align:middle;
-}
-
-#education-box {
-	background-color:#fff;
-	padding:20px 2.4%;
 }
 
 #education-box ul {

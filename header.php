@@ -25,7 +25,7 @@
 			<img src="<?php bloginfo('template_directory'); ?>/images/ctlogo03.gif" alt="Charlie Thomason logo">
 		</a>
 	</h1>
-	<h2 class="safe-hide">Web Developer and Artist from Chicago</h2>
+	<h2>Web Developer <span class="fancy-amp">&amp;</span> Artist from Chicago</h2>
 	
 	<nav id="nav" role="navigation">
 		<div id="primary-nav">

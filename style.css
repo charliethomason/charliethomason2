@@ -283,16 +283,25 @@ body {
 #header h1 {
 	margin:0 auto;
 	max-width:960px;
-	padding:90px 0 0;
+	padding:100px 0 15px;
 	position:relative;
 }
 
 #header h1 > a {
-	background:url('images/ctlogo03.png') no-repeat scroll 0 0 transparent;
+	background:url('images/ctlogo04.png') no-repeat scroll 0 0 transparent;
 	display:block;
-	height:340px;
+	height:112px;
 	margin:0 auto;
-	width:600px;
+	width:415px;
+}
+
+#header h2 {
+	border-top:1px solid #666;
+	line-height:1;
+	margin:0 auto;
+	max-width:415px;
+	padding:10px 0 40px;
+	text-transform: uppercase;
 }
 
 #nav {
@@ -1138,82 +1147,79 @@ section.tags ul.taglist li {
 /* BEGIN Loading animation */
 
 #flickr-loading {
-	padding:20px 0 0;
-}
-#circleG{
-	margin:0 auto;
-	width:149.33333333333334px;
+	padding:30px 0 10px;
 }
 
-.circleG{
+#flickr-loading p {
+	font-family: monospace;
+	padding:0 0 10px;
+	text-align:center;
+}
+
+#noTrespassingOuterBarG {
 	background-color:#FFFFFF;
+	border:1px solid #000000;
+	height:20px;
+	margin:0 auto;
+	overflow:hidden;
+	width:160px;
+}
+
+.noTrespassingBarLineG {
+	background-color:#000000;
 	float:left;
-	height:32px;
-	margin-left:17px;
-	width:32px;
-	-moz-animation-name:bounce_circleG;
-	-moz-animation-duration:1.2000000000000002s;
+	height:120px;
+	margin-right:24px;
+	margin-top:-28px;
+	width:14px;
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+
+.noTrespassingAnimationG {
+	width:236px;
+	-moz-animation-name:noTrespassingAnimationG;
+	-moz-animation-duration:1.3s;
 	-moz-animation-iteration-count:infinite;
-	-moz-animation-direction:linear;
-	-moz-border-radius:21px;
-	-webkit-animation-name:bounce_circleG;
-	-webkit-animation-duration:1.2000000000000002s;
+	-moz-animation-timing-function:linear;
+	-webkit-animation-name:noTrespassingAnimationG;
+	-webkit-animation-duration:1.3s;
 	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-direction:linear;
-	-webkit-border-radius:21px;
-	animation-name:bounce_circleG;
-	animation-duration:1.2000000000000002s;
+	-webkit-animation-timing-function:linear;
+	animation-name:noTrespassingAnimationG;
+	animation-duration:1.3s;
 	animation-iteration-count:infinite;
-	animation-direction:linear;
-	border-radius:21px;
+	animation-timing-function:linear;
 }
 
-#circleG_1{
-	margin-left:0;
-	-moz-animation-delay:0.24000000000000005s;
-	-webkit-animation-delay:0.24000000000000005s;
-	animation-delay:0.24000000000000005s;
+#noTrespassingFrontBarG {
 }
 
-#circleG_2{
-	-moz-animation-delay:0.56s;
-	-webkit-animation-delay:0.56s;
-	animation-delay:0.56s;
-}
-
-#circleG_3{
-	-moz-animation-delay:0.72s;
-	-webkit-animation-delay:0.72s;
-	animation-delay:0.72s;
-}
-
-@-moz-keyframes bounce_circleG{
+@-moz-keyframes noTrespassingAnimationG {
 	0%{
-	}
-	50%{
-		background-color:#000000;
+		margin-left:0px;
 	}
 	100%{
+		margin-left:-38px;
 	}
 }
 
-@-webkit-keyframes bounce_circleG{
+@-webkit-keyframes noTrespassingAnimationG {
 	0%{
-	}
-	50%{
-		background-color:#000000;
+		margin-left:0px;
 	}
 	100%{
+		margin-left:-38px;
 	}
 }
 
-@keyframes bounce_circleG{
+@keyframes noTrespassingAnimationG {
 	0%{
-	}
-	50%{
-		background-color:#000000;
+		margin-left:0px;
 	}
 	100%{
+		margin-left:-38px;
 	}
 }
 /* END Loading animation */

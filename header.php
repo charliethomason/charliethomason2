@@ -44,9 +44,21 @@
 			</li>
 		</ul>
 		<ul class="nav-social">
-			<li class="nav-twitter"><a href="http://twitter.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Twitter</span></a></li>
-			<li class="nav-flickr"><a href="http://flickr.com/recycledfilm" class="contact-btn" rel="nofollow" target="_blank"><span>Flickr</span></a></li>
-			<li class="nav-instagram"><a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Instagram</span></a></li>
+			<li class="nav-twitter">
+				<a href="http://twitter.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank" class="hide-text">
+					<img src="<?php bloginfo('template_directory'); ?>/images/icon-twitter05.png" alt="Twitter">
+				</a>
+			</li>
+			<li class="nav-flickr">
+				<a href="http://flickr.com/recycledfilm" class="contact-btn" rel="nofollow" target="_blank" class="hide-text">
+					<img src="<?php bloginfo('template_directory'); ?>/images/icon-flickr05.png" alt="Flickr">
+				</a>
+			</li>
+			<li class="nav-instagram">
+				<a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank" class="hide-text">
+					<img src="<?php bloginfo('template_directory'); ?>/images/icon-instagram05.png" alt="Instagram">
+				</a>
+			</li>
 		</ul>
 		<div class="clear"></div>
 	</div>

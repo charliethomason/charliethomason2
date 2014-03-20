@@ -8,7 +8,7 @@ Template Name: Homepage
 <main class="home-main">
 
 	<section id="home-blog" class="home-section">
-		<h2 class="home-head"><a href="javascript:void(0)">Blog</a></h2>
+		<h2 class="home-head"><a href="blog">Blog</a></h2>
 		<div class="blog ideas-blog">
 
 			<div class="ideas-list">
@@ -40,7 +40,7 @@ Template Name: Homepage
 	</section>
 
 	<section id="home-art" class="home-section">
-		<h2 class="home-head"><a href="javascript:void(0)">Art <span class="fancy-amp">&amp;</span> Photo Gallery</a></h2>
+		<h2 class="home-head"><a href="art">Art <span class="fancy-amp">&amp;</span> Photo Gallery</a></h2>
 		<?php 
 			$temp = $wp_query; 
 			$wp_query = null; 

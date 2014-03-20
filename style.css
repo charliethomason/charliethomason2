@@ -280,19 +280,21 @@ body {
 
 /* BEGIN Header/Nav */
 
-#header h1 {
+#header {
 	margin:0 auto;
-	max-width:960px;
-	padding:100px 0 15px;
-	position:relative;
+	max-width:500px;
+	padding:100px 0 40px;
+	text-align:center;
 }
 
-#header h1 > a {
-	background:url('images/ctlogo04.png') no-repeat scroll 0 0 transparent;
+#header h1 a {
 	display:block;
-	height:112px;
-	margin:0 auto;
-	width:415px;
+	padding:0 0 15px;
+}
+
+#header h1 a img {
+	height:auto;
+	max-width:100%;
 }
 
 #header h2 {
@@ -300,7 +302,7 @@ body {
 	line-height:1;
 	margin:0 auto;
 	max-width:415px;
-	padding:10px 0 40px;
+	padding:10px 0 0;
 	text-transform: uppercase;
 }
 
@@ -1346,15 +1348,6 @@ footer .fancy-amp {
 }
 
 @media screen and (max-width:650px) {
-	#header h1 {
-		padding-top:80px;
-	}
-	#header h1 a#logo {
-		display:none;
-	}
-	#header h1 a#mobile-logo {
-		display:block;
-	}
 	.blog-gallery {
 		max-width:550px;
 	}
@@ -1398,11 +1391,6 @@ footer .fancy-amp {
 }
 
 @media screen and (max-width:550px) {
-	#header h2 {
-		font-size:1.25em;
-		line-height:1.5em;
-		margin-top:0;
-	}
 	.blog-gallery {
 		max-width:332px;
 	}
@@ -1451,9 +1439,6 @@ footer .fancy-amp {
 }
 
 @media screen and (max-width:480px) {
-	#header h1 {
-		padding-top:70px;	
-	}
 	#hamburger {
 		display:block;
 	}

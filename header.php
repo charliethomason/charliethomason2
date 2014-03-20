@@ -18,41 +18,38 @@
 <body>
  
 <header id="header">
-	
 	<h1 role="banner">
-		<a id="logo" class="hidetext" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
-		<a id="mobile-logo" class="hidetext" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
-			<img src="<?php bloginfo('template_directory'); ?>/images/ctlogo03.gif" alt="Charlie Thomason logo">
+		<a id="logo" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
+			<img src="<?php bloginfo('template_directory'); ?>/images/ctlogo04.png" alt="<?php bloginfo('name'); ?>">
 		</a>
 	</h1>
 	<h2>Web Developer <span class="fancy-amp">&amp;</span> Artist from Chicago</h2>
-	
-	<nav id="nav" role="navigation">
-		<div id="primary-nav">
-			<a href="#" role="button" id="hamburger">Menu</a>
-			<ul class="main-nav">
-				<li<?php if (is_home() || is_singular('post') || is_category()) { ?> class="active"<?php } ?>>
-					<a href="<?php echo get_option('home'); ?>">Home</a>
-				</li>
-				<li<?php if (is_page_template('art.php') || is_singular('art') || is_tag() || is_page_template('art-tags.php')) { ?> class="active"<?php } ?>>
-					<a href="/art">Art</a>
-				</li>
-				<li<?php if (is_page_template('about.php')) { ?> class="active"<?php } ?>>
-					<a href="/about">About</a>
-				</li>
-				<li<?php if (is_page_template('store.php')) { ?> class="active"<?php } ?>>
-					<a href="/store">Store</a>
-				</li>
-			</ul>
-			<ul class="nav-social">
-				<li class="nav-twitter"><a href="http://twitter.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Twitter</span></a></li>
-				<li class="nav-flickr"><a href="http://flickr.com/recycledfilm" class="contact-btn" rel="nofollow" target="_blank"><span>Flickr</span></a></li>
-				<li class="nav-instagram"><a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Instagram</span></a></li>
-			</ul>
-			<div class="clear"></div>
-		</div>
-	</nav>
-	
 </header>
+	
+<nav id="nav" role="navigation">
+	<div id="primary-nav">
+		<a href="#" role="button" id="hamburger">Menu</a>
+		<ul class="main-nav">
+			<li<?php if (is_home() || is_singular('post') || is_category()) { ?> class="active"<?php } ?>>
+				<a href="<?php echo get_option('home'); ?>">Home</a>
+			</li>
+			<li<?php if (is_page_template('art.php') || is_singular('art') || is_tag() || is_page_template('art-tags.php')) { ?> class="active"<?php } ?>>
+				<a href="/art">Art</a>
+			</li>
+			<li<?php if (is_page_template('about.php')) { ?> class="active"<?php } ?>>
+				<a href="/about">About</a>
+			</li>
+			<li<?php if (is_page_template('store.php')) { ?> class="active"<?php } ?>>
+				<a href="/store">Store</a>
+			</li>
+		</ul>
+		<ul class="nav-social">
+			<li class="nav-twitter"><a href="http://twitter.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Twitter</span></a></li>
+			<li class="nav-flickr"><a href="http://flickr.com/recycledfilm" class="contact-btn" rel="nofollow" target="_blank"><span>Flickr</span></a></li>
+			<li class="nav-instagram"><a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank"><span>Instagram</span></a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</nav>
 
 <div id="container" role="main">

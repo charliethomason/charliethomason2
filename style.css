@@ -194,8 +194,6 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	vertical-align: top;
 	white-space:nowrap;
 	width:30px;
-	-moz-box-sizing:content-box;
-	box-sizing:content-box;
 }
 
 .btn.secondary-btn.cat-btn {
@@ -217,7 +215,7 @@ input {
 	font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
 	font-size: 18px;
 	font-style:italic;
-	height: 30px;
+	height: 34px;
 	line-height: 30px;
 	margin: 0;
 	padding: 2px;
@@ -448,19 +446,24 @@ ul.nav-social a {
 
 .home-section .home-head a {
 	background-color: #000;
-	border:2px solid #000;
 	color:#fff;
 	display:block;
-	padding:8px 0;
+	padding:10px 0;
 }
 
 .home-section .home-head a:hover,
 .home-section .home-head a:focus {
 	background-color: #539313;
+	color:#000;
 }
 
 .home-section .home-head a .fancy-amp {
 	color:#ccc;
+}
+
+.home-section .home-head a:hover .fancy-amp,
+.home-section .home-head a:focus .fancy-amp {
+	color:#000;
 }
 
 .home-section .blog {
@@ -1131,21 +1134,15 @@ aside.details-box li:first-child {
 
 /* BEGIN Art Tags Page */
 
-.blog.tag-page div.entry {
-	/*margin-left:-1.2%;*/
-}
-
 section.tags {
 	background:#fff;
 	border:1px solid #ddd;
 	float:left;
 	margin:0 0 15px;
 	padding:10px 1.1%;
-	width:280px;
+	width:300px;
 	-webkit-box-shadow:0 2px 1px #ccc;
 	box-shadow:0 2px 1px #ccc;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
 }
 
 section.tags ul.taglist {
@@ -1330,6 +1327,7 @@ footer .fancy-amp {
 		width:250px;
 	}
 	section.tags {
+		margin-bottom:5px;
 		width:250px;
 	}
 	.info .btn {
@@ -1357,7 +1355,8 @@ footer .fancy-amp {
 		width:200px;
 	}
 	section.tags {
-		width:280px;
+		margin-bottom:15px;
+		width:300px;
 	}
 }
 
@@ -1380,6 +1379,7 @@ footer .fancy-amp {
 		width:225px;
 	}
 	section.tags {
+		margin-bottom:5px;
 		width:250px;
 	}
 	.info {

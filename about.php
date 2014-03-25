@@ -84,23 +84,22 @@ Template Name: About Page
 	<section id="about-facts" class="about-section">
 		<h2 class="home-head">Random Facts</h2>
 		<div id="facts-box" class="blog">
+			<div class="fact green-fact" tabindex="0">I love Chicago and hope to live here for the rest of my life.</div>
 			<div class="fact italic-fact" tabindex="0">I met my girlfriend Amanda at the 2009 Sundance Film Festival in Park City, Utah. We returned to the festival again in 2010 and 2011.</div>
-			<div class="fact" tabindex="0">I hope to be remembered as creative, unique, positive, nice, and intelligent.</div>
-			<div class="fact italic-fact" tabindex="0">I consider myself a liberal/progressive Catholic and am a member at Old St. Patrick's Church in the West Loop of Chicago.</div>
-			<div class="fact" tabindex="0">If I could live anywhere in the world, I would still live in the South Loop of Chicago. Or, perhaps Venice, Italy.</div>
-			<div class="fact" tabindex="0">I grew up in the tiny borough of Shrewsbury, New Jersey. In 1999 my family moved to Bardstown, Kentucky, where I went to high school.</div>
-			<div class="fact italic-fact" tabindex="0">&quot;Nothing is permanent in this wicked world &mdash; not even our troubles.&quot;<br>&mdash; Charlie Chaplin</div>
-			<div class="fact green-fact" tabindex="0">My ideal sleeping time is 1AM to 8AM.</div>
-			<div class="fact" tabindex="0">I don't own a car and have no intention of buying one.</div>
-			<div class="fact italic-fact" tabindex="0">My favorite bands are Nirvana, The Beatles, and Tom Waits.</div>
-			<div class="fact italic-fact" tabindex="0">My favorite movies are <em>City Lights</em>, <em>Taxi Driver</em>, <em>The Empire Strikes Back</em>, and <em>Edward Scissorhands</em>.</div>
+			<div class="fact" tabindex="0">I consider myself a liberal/progressive Catholic and am a member at Old St. Patrick's Church in the West Loop of Chicago.</div>
+			<div class="fact italic-fact" tabindex="0">I have zero tolerance for people who use cellphones in movie theaters.</div>
+			<div class="fact italic-fact" tabindex="0">I was born and grew up in the tiny borough of Shrewsbury, New Jersey. In 1999 my family moved to Bardstown, Kentucky, where I went to high school.</div>
+			<div class="fact green-fact" tabindex="0">My favorite movies are <em>City Lights</em>, <em>Taxi Driver</em>, <em>The Empire Strikes Back</em>, and <em>Edward Scissorhands</em>.</div>
+			<div class="fact green-fact" tabindex="0">My favorite bands are Nirvana, The Beatles, and Tom Waits.</div>
 			<div class="fact green-fact" tabindex="0">My favorite actors are Vincent Price and Jack Nicholson.</div>
 			<div class="fact green-fact" tabindex="0">My favorite book is "Perfume" by Patrick S&uuml;skind.</div>
-			<div class="fact" tabindex="0">The sports teams I care about most are Ferrari Formula 1 racing, Chicago White Sox, and Chicago Blackhawks.</div>
-			<div class="fact" tabindex="0">I'm afraid of praying mantises, moths, bees, and giant spiders. Especially praying mantises.</div>
-			<div class="fact" tabindex="0">I was a vegetarian for 5 years. I still try to avoid any products with high fructose corn syrup or MSG.</div>
+			<div class="fact italic-fact" tabindex="0">Thanks to my Dad, I am a big fan of Formula 1 racing&mdash;especially the Ferrari team, having grown up during the Michael Schumacher era. My Dad and I attended the US Grand Prix at Indianapolis 3 times and the Italian Grand Prix of Monza in 2011.</div>
+			<div class="fact" tabindex="0">I'm afraid of most insects, especially praying mantises and moths. I am <em>not</em>, however, afraid of snakes, mice, or rats.</div>
+			<div class="fact" tabindex="0">I was a vegetarian from 2005-2010. During the last year I was a pescetarian, but my ultimate downfall was wanting a Chicago-style hot dog.</div>
+			<div class="fact" tabindex="0">I am a recovering alcholic and have been sober since October 9, 2013.</div>
 			<div class="fact italic-fact" tabindex="0">To date, I have visited England twice, Italy twice, Switzerland, Mexico, and Canada.</div>
-			<div class="fact" tabindex="0">I have zero tolerance for people who use cellphones in movie theaters.</div>
+			<div class="fact italic-fact" tabindex="0">I am definitely a "cat person" and have always had a pet cat my whole life. I am generally uncomfortable around dogs and will never own one as a pet.</div>
+			<div class="fact" tabindex="0">I have been playing music since 2nd grade and can play (in descending order of aptitude) the guitar, piano, bass, and drums. I'd someday like to learn the cello.</div>
 			<div class="sizer">&nbsp;</div>
 		</div>
 	</section>

@@ -96,7 +96,7 @@ Template Name: About Page
 			<div class="fact italic-fact" tabindex="0">Thanks to my Dad, I am a big fan of Formula 1 racing&mdash;especially the Ferrari team, having grown up during the Michael Schumacher era. My Dad and I attended the US Grand Prix at Indianapolis 3 times and the Italian Grand Prix of Monza in 2011.</div>
 			<div class="fact" tabindex="0">I'm afraid of most insects, especially praying mantises and moths. I am <em>not</em>, however, afraid of snakes, mice, or rats.</div>
 			<div class="fact" tabindex="0">I was a vegetarian from 2005-2010. During the last year I was a pescetarian, but my ultimate downfall was wanting a Chicago-style hot dog.</div>
-			<div class="fact" tabindex="0">I am a recovering alcholic and have been sober since October 9, 2013.</div>
+			<div class="fact" tabindex="0">I am a recovering alcoholic and have been sober since October 9, 2013.</div>
 			<div class="fact italic-fact" tabindex="0">To date, I have visited England twice, Italy twice, Switzerland, Mexico, and Canada.</div>
 			<div class="fact italic-fact" tabindex="0">I am definitely a "cat person" and have always had a pet cat my whole life. I am generally uncomfortable around dogs and will never own one as a pet.</div>
 			<div class="fact" tabindex="0">I have been playing music since 2nd grade and can play (in descending order of aptitude) the guitar, piano, bass, and drums. I'd someday like to learn the cello.</div>

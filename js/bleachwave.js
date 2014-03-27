@@ -7,22 +7,16 @@ $(window).load(function() {
 });
 $(document).ready(function() {
 	// Add fancy-amp class to ampersands in category titles
-	$('#category-title:contains(&)').each(function(){
+	$("h2:contains('&')").each(function() {
 		$(this).html(
 			$(this).html().replace('&amp;','<span class=\'fancy-amp\'>&amp;</span>')
 		);
 	});
 	// Add "current-cat" class to currently-viewed category on category pages
-	var currentUrl = window.location.pathname.split('/');
-	if(currentUrl[1] == "category") {
+	if($('#category-title').length) {
 		var categoryTitle = $("#category-title").text();
 		var categoryLink = $("a:contains('" + categoryTitle + "')");
-		if(categoryTitle == "Photography") {
-			// Fix bug where any category containing the word "Photography" gets current-cat
-			$(".blog-menu,.main-sub-nav").find("a:contains('Digital Photography')").removeClass("current-cat");
-		} else {
-			$(".blog-menu,.main-sub-nav").find(categoryLink).addClass("current-cat");
-		}
+		$(".blog-menu").find(categoryLink).addClass("current-cat");
 	}
 	// Clicking anywhere on art-item opens link to gallery post
 	$(".info").click(function(e) {

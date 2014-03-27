@@ -1082,12 +1082,11 @@ aside.details-box li:first-child {
 	margin:0 2px;
 }
 
-.main-sub-nav li:first-child,
 .blog-menu li:first-child {
 	background-color:#ddd;
 }
 
-.main-sub-nav li:first-child a,
+
 .blog-menu li:first-child a {
 	border-left:3px solid #666;
 	color:#666;
@@ -1101,8 +1100,7 @@ aside.details-box li:first-child {
 }
 
 .blog-menu li a:hover,
-.blog-menu li a.current-cat,
-.main-sub-nav li a.current-cat {
+.blog-menu li a.current-cat {
 	background-color:#9CCB85;
 	border-left:3px solid #253B06;
 	padding:5px;

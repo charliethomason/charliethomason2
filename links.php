@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Links
+*/
+?>
 <?php get_header(); ?>
 <div class="blog page-blog">
 	<?php if(have_posts()) : ?>

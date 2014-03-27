@@ -8,9 +8,11 @@ $(window).load(function() {
 $(document).ready(function() {
 	// Add fancy-amp class to ampersands in category titles
 	$("h2:contains('&')").each(function() {
-		$(this).html(
-			$(this).html().replace('&amp;','<span class=\'fancy-amp\'>&amp;</span>')
-		);
+		if($(this).find('.fancy-amp').length == 0) {
+			$(this).html(
+				$(this).html().replace('&amp;','<span class=\'fancy-amp\'>&amp;</span>')
+			);
+		}
 	});
 	// Add "current-cat" class to currently-viewed category on category pages
 	if($('#category-title').length) {

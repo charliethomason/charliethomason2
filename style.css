@@ -1429,24 +1429,48 @@ footer .fancy-amp {
 /**********************/
 
 /* BEGIN Other Responsive Features */
-
-@media screen and (max-width:800px) {
+@media all and (max-width:960px) {
+	.home-main {
+		max-width:800px;
+	}
+	.home-section {
+		margin-left:2.5%;
+		width:31.5%;
+	}
+}
+@media all and (max-width:800px) {
 	.about-intro {
 		padding:20px 0;
 		width:90%;
 	}
+	.home-main {
+		max-width:650px;
+	}
+	.home-section .home-head {
+		margin-bottom:10px;
+	}
+	.home-section h2 {
+		font-size:1.125em;
+	}
+	.home-section .catdate {
+		font-size:0.875em;
+	}
+	.home-section .idea {
+		padding:10px 0;
+	}
+	.home-section .btn {
+		font-size:0.875em;
+		margin-top:5px;
+		padding:10px;
+	}
 }
 
-@media screen and (max-width:650px) {
+@media all and (max-width:650px) {
 	.index-head {
 		width:90%;
 	}
 	.nav-wrap {
 		width:90%;
-	}
-	.btn.home-btn {
-		display:inline-block;
-		width:auto;
 	}
 	.about-intro h2 {
 		clear:both;
@@ -1461,9 +1485,16 @@ footer .fancy-amp {
 		margin:0 0 20px;
 		width:100%;
 	}
+	.home-main {
+		padding:0 10px 40px;
+	}
+	.home-section {
+		margin:10px 0 0;
+		width:100%;
+	}
 }
 
-@media screen and (max-width:550px) {
+@media all and (max-width:550px) {
 	.index-head {
 		font-size:1.75em;
 	}
@@ -1493,7 +1524,7 @@ footer .fancy-amp {
 	}
 }
 
-@media screen and (max-width:480px) {
+@media all and (max-width:480px) {
 	#hamburger {
 		display:block;
 	}
@@ -1533,17 +1564,17 @@ footer .fancy-amp {
 		padding:10px;
 	}
 }
-@media screen and (min-width:481px) {
+@media all and (min-width:481px) {
 	ul.main-nav {
 		display:block !important;
 	}
 }
-@media screen and (min-width:551px) {
+@media all and (min-width:551px) {
 	#search-nav-menu .blog-menu {
 		display:block !important;
 	}
 }
-@media screen and (min-width:651px) {
+@media all and (min-width:651px) {
 	.nav-social {
 		display:block !important;
 	}

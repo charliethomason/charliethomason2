@@ -54,7 +54,7 @@ $(document).ready(function() {
 	// Clicking hamburger on mobile triggers nav-social
 	$("#hamburger").click(function(e) {
 		e.preventDefault();
-		$("ul.main-nav").slideToggle(700);
+		$("ul.main-nav").slideToggle();
 	});
 	// Add button classes to navigation buttons
 	var $prevLink = $('.prev-post > a');

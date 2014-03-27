@@ -30,33 +30,26 @@
 	<div id="primary-nav">
 		<a href="#" role="button" id="hamburger">Menu</a>
 		<ul class="main-nav">
-			<li<?php if (is_home() || is_singular('post') || is_category()) { ?> class="active"<?php } ?>>
+			<li<?php if (is_front_page()) { ?> class="active"<?php } ?>>
 				<a href="<?php echo get_option('home'); ?>">Home</a>
-			</li>
-			<li<?php if (is_page_template('art.php') || is_singular('art') || is_tag() || is_page_template('art-tags.php')) { ?> class="active"<?php } ?>>
-				<a href="/art">Art</a>
 			</li>
 			<li<?php if (is_page_template('about.php')) { ?> class="active"<?php } ?>>
 				<a href="/about">About</a>
 			</li>
-			<li<?php if (is_page_template('store.php')) { ?> class="active"<?php } ?>>
-				<a href="/store">Store</a>
+			<li<?php if (is_page_template('art.php') || is_singular('art') || is_tag() || is_page_template('art-tags.php')) { ?> class="active"<?php } ?>>
+				<a href="/art">Art</a>
+			</li>
+			<li<?php if (is_home() || is_singular('post') || is_category()) { ?> class="active"<?php } ?>>
+				<a href="/blog">Blog</a>
+			</li>
+			<li<?php if (is_page_template('links.php')) { ?> class="active"<?php } ?>>
+				<a href="/links">Links</a>
 			</li>
 		</ul>
 		<ul class="nav-social">
 			<li class="nav-twitter">
 				<a href="http://twitter.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank" class="hide-text">
 					<img src="<?php bloginfo('template_directory'); ?>/images/icon-twitter05.png" alt="Twitter">
-				</a>
-			</li>
-			<li class="nav-flickr">
-				<a href="http://flickr.com/recycledfilm" class="contact-btn" rel="nofollow" target="_blank" class="hide-text">
-					<img src="<?php bloginfo('template_directory'); ?>/images/icon-flickr05.png" alt="Flickr">
-				</a>
-			</li>
-			<li class="nav-instagram">
-				<a href="http://instagram.com/charliethomason" class="contact-btn" rel="nofollow" target="_blank" class="hide-text">
-					<img src="<?php bloginfo('template_directory'); ?>/images/icon-instagram05.png" alt="Instagram">
 				</a>
 			</li>
 		</ul>

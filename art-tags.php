@@ -8,7 +8,7 @@ Template Name: Art Tag Page
 
 	<h2 class="index-head">Art <span class="fancy-amp">&amp;</span> Photo Gallery Tags</h2>
 
-	<p><a href="/art" class="btn secondary-btn">&laquo; Return to Main Gallery</a></p>
+	<p><a href="/art" class="btn secondary-btn">&#9668; Return to Main Gallery</a></p>
 
 	<article class="post">
 

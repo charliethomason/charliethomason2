@@ -103,8 +103,8 @@
 </div><!--div.blog-->
 
 			<div class="navigation">
-				<div class="prev-post"><?php previous_posts_link('&laquo; Back') ?></div>
-				<div class="next-post"><?php next_posts_link('Next &raquo;') ?></div>
+				<div class="prev-post"><?php previous_posts_link('&#9668; Back') ?></div>
+				<div class="next-post"><?php next_posts_link('Next &#9658;') ?></div>
 			</div>
 
 			<?php else : ?>

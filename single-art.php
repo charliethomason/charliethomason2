@@ -54,8 +54,8 @@
 
 	<?php endwhile; ?>
 	<div class="navigation"> 
-	    <div class="prev-post"><?php previous_post_link( '%link', '&laquo; %title' ) ?></div>
-		<div class="next-post"><?php next_post_link( '%link', '%title &raquo;' ) ?></div>
+	    <div class="prev-post"><?php previous_post_link( '%link', '&#9668; %title' ) ?></div>
+		<div class="next-post"><?php next_post_link( '%link', '%title &#9658;' ) ?></div>
 		<div class="clear"></div>
 	</div>
 	<?php endif; ?>

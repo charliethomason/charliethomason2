@@ -12,7 +12,7 @@ Template Name: Gallery
 		 <?php get_search_form(); ?> 
 		<nav class="search-nav">
 			<span id="search-nav-menu">
-				<a href="/art-tags" class="btn secondary-btn">Tags</a>
+				<a href="/art-tags" class="btn secondary-btn">Tags &#9658;</a>
 				<!--<a href="#" class="btn secondary-btn cat-btn" aria-haspopup="true" aria-controls="blog-menu" role="menuitem">Tags</a>-->
 				<!--<ul class="blog-menu tag-menu" role="menu" aria-hidden="true" aria-live="polite" id="blog-menu">
 					<?php 
@@ -67,8 +67,8 @@ Template Name: Gallery
 		<div class="sizer">&nbsp;</div>
 	</div>
 	<div class="navigation">
-	    <div class="prev-post"><?php previous_posts_link('&laquo; Newer') ?></div>
-	    <div class="next-post"><?php next_posts_link('Older &raquo;') ?></div>
+	    <div class="prev-post"><?php previous_posts_link('&#9668; Newer') ?></div>
+	    <div class="next-post"><?php next_posts_link('Older &#9658;') ?></div>
 	</div>
 	<?php 
 	  $wp_query = null; 

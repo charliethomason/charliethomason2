@@ -257,6 +257,7 @@ body {
 	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin:0;
 	padding:0;
+	min-width:320px;
 }
 
 #header {
@@ -407,14 +408,15 @@ ul.nav-social a {
 }
 
 #hamburger {
-    background: url('images/chicago-y-hamburger01.png');
-    display:none;
-    height: 40px;
-    position: absolute;
-    left: 13px;
-    text-indent: -9999px;
-    top: 13px;
-    width: 40px;
+	color:#fff;
+	display:none;
+	float:left;
+	font-family: "Fjalla One","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-size:24px;
+	font-weight:normal;
+	padding:20px;
+	text-transform: uppercase;
+	text-shadow:0 2px 0 #000;
 }
 
 /* END Header / Nav */
@@ -1492,6 +1494,9 @@ footer .fancy-amp {
 		margin:10px 0 0;
 		width:100%;
 	}
+	.home-section a.thumb {
+		text-align:center;
+	}
 }
 
 @media all and (max-width:550px) {
@@ -1552,8 +1557,9 @@ footer .fancy-amp {
 		border-top:medium none;
 		color:#333;
 		font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size:24px;
 		font-weight:bold;
-		padding:10px;
+		padding:10px 20px;
 		text-shadow:none;
 		text-transform:none;
 	}
@@ -1561,7 +1567,14 @@ footer .fancy-amp {
 		background-color: #539313;
 		border-top:medium none;
 		color:#fff;
-		padding:10px;
+		padding:10px 20px;
+	}
+	#header {
+		padding-left:20px;
+		padding-right:20px;
+	}
+	ul.nav-social a {
+		padding:10px 20px;
 	}
 }
 @media all and (min-width:481px) {

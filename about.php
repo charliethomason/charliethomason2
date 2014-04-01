@@ -28,18 +28,22 @@ Template Name: About Page
 			<div id="skills-box">
 				<ul>
 					<div class="skills-column">
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/html5-02.png" alt="HTML5 logo" />HTML5</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/html5-02.png" alt="HTML5 logo" />HTML</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/css3-01.png" alt="CSS3 logo" />CSS</li>
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/js-01.png" alt="JavaScript logo" />JavaScript, jQuery, AJAX</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/js-01.png" alt="JavaScript logo" />JavaScript, jQuery</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/php-01.png" alt="PHP logo" />PHP</li>
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/sass-01.png" alt="Sass logo" />HAML, Sass, LESS</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/sass-01.png" alt="Sass logo" />Sass, LESS</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/angular-01.png" alt="Angular JS logo" />AngularJS, Backbone.js</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/accessibility-01.png" alt="Web Accessibility" />Web Accessibility</li>
 					</div>
 					<div class="skills-column second">
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/drupal-01.png" alt="Drupal logo" />Drupal</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/wordpress-01.png" alt="WordPress logo" />WordPress</li>
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/ror-01.png" alt="Ruby on Rails logo" />Ruby on Rails (beginner)</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/drupal-01.png" alt="Drupal logo" />Drupal</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/handlebars-01.png" alt="Handlebars logo" />Handlebars.js</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/bootstrap-01.png" alt="Bootstrap logo" />Bootstrap, Foundation</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/grunt-01.png" alt="Grunt logo" />Grunt</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/git-01.png" alt="Git logo" />Version Control (Git, SVN)</li>
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/ps-01.png" alt="Photoshop logo" />Adobe Creative Suite</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/ps-02.png" alt="Photoshop logo" />Adobe Creative Suite</li>
 					</div>
 					<div class="clear"></div>
 				</ul>

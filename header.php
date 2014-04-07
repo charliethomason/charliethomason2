@@ -20,7 +20,7 @@
 <header id="header">
 	<h1 role="banner">
 		<a id="logo" href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>">
-			<img src="<?php bloginfo('template_directory'); ?>/images/ctlogo04.png" alt="<?php bloginfo('name'); ?>">
+			<img src="<?php bloginfo('template_directory'); ?>/images/ctlogo05.png" alt="<?php bloginfo('name'); ?>">
 		</a>
 	</h1>
 </header>

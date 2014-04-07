@@ -208,7 +208,7 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	text-transform: none;
 }
 
-input {
+input[type=text] {
 	border: 1px solid #253B06;
 	border-radius:3px 0 0 3px;
 	display:inline-block;
@@ -301,15 +301,6 @@ body {
 #header h1 a img {
 	height:auto;
 	max-width:100%;
-}
-
-#header h2 {
-	border-top:1px solid #666;
-	line-height:1;
-	margin:0 auto;
-	max-width:415px;
-	padding:10px 0 0;
-	text-transform: uppercase;
 }
 
 #nav {
@@ -1273,6 +1264,56 @@ section.tags ul.taglist li {
 }
 
 /* END Store */
+
+/***************************/
+
+/* BEGIN Contact Form */
+
+form.wpcf7-form label {
+	display:block;
+	padding:10px 0;
+}
+
+form.wpcf7-form .contact-label {
+	display:block;
+}
+
+form.wpcf7-form input[type=text],
+form.wpcf7-form input[type=email] {
+	border:1px solid #666;
+	border-radius:0;
+	display:block;
+	font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+	font-size:18px;
+	height:40px;
+	line-height:40px;
+	margin:0;
+	padding:0 10px;
+	width:300px;
+	-webkit-appearance:none;
+}
+
+form.wpcf7-form textarea {
+	border:1px solid #666;
+	border-radius:0;
+	font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+	font-size:18px;
+	height:200px;
+	line-height:1.5em;
+	margin:0;
+	padding:10px;
+	resize:none;
+	width:300px;
+	-webkit-appearance:none;
+}
+
+form.wpcf7-form input[type=text]:focus,
+form.wpcf7-form input[type=email]:focus,
+form.wpcf7-form textarea:focus {
+	border-color:#539313;
+}
+
+/* END Contact Form */
 
 /***************************/
 

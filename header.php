@@ -23,7 +23,6 @@
 			<img src="<?php bloginfo('template_directory'); ?>/images/ctlogo04.png" alt="<?php bloginfo('name'); ?>">
 		</a>
 	</h1>
-	<h2>Web Developer <span class="fancy-amp">&amp;</span> Artist from Chicago</h2>
 </header>
 	
 <nav id="nav" role="navigation">

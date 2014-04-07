@@ -290,7 +290,7 @@ body {
 #header {
 	margin:0 auto;
 	max-width:500px;
-	padding:100px 0 40px;
+	padding:100px 0 20px;
 	text-align:center;
 }
 
@@ -424,6 +424,21 @@ ul.nav-social a {
 /************************/
 
 /* BEGIN Homepage */
+
+.home-intro {
+	margin:0 auto;
+	max-width:800px;
+	outline:0 none;
+	padding:0 20px 40px;
+	text-align:center;
+}
+
+.home-intro p {
+	font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+	font-size:1.25em;
+	line-height:1.5em;
+	padding:15px 0 0;
+}
 
 .home-main {
 	margin:0 auto;

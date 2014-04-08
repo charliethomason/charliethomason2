@@ -4,6 +4,19 @@ $(window).load(function() {
 	$(".thumb > img").each(function(){
 		$(this).removeAttr("width").removeAttr("height");
 	});
+	if($('#intro-greeting').length){
+		var currentTime = new Date();
+		var hours = currentTime.getHours();
+		var greeting = 'Good morning';
+		if(hours >= 12) {
+			if(hours >= 18) {
+				greeting = 'Good evening';
+			} else {
+				greeting = 'Good afternoon';
+			}
+		}
+		$('#intro-greeting').text(greeting);
+	}
 });
 $(document).ready(function() {
 	// Add fancy-amp class to ampersands in category titles

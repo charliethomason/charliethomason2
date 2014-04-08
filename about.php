@@ -33,7 +33,7 @@ Template Name: About Page
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/js-01.png" alt="JavaScript logo" />JavaScript, jQuery</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/php-01.png" alt="PHP logo" />PHP</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/sass-01.png" alt="Sass logo" />Sass, LESS</li>
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/angular-01.png" alt="Angular JS logo" />AngularJS, Backbone.js</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/angular-01.png" alt="Angular JS logo" />AngularJS, Ember.js</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/accessibility-01.png" alt="Web Accessibility" />Web Accessibility</li>
 					</div>
 					<div class="skills-column second">
@@ -42,7 +42,7 @@ Template Name: About Page
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/handlebars-01.png" alt="Handlebars logo" />Handlebars.js</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/bootstrap-01.png" alt="Bootstrap logo" />Bootstrap, Foundation</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/grunt-01.png" alt="Grunt logo" />Grunt</li>
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/git-01.png" alt="Git logo" />Version Control (Git, SVN)</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/git-01.png" alt="Git logo" />Git, SVN</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/ps-02.png" alt="Photoshop logo" />Adobe Creative Suite</li>
 					</div>
 					<div class="clear"></div>
@@ -104,6 +104,7 @@ Template Name: About Page
 			<div class="fact italic-fact" tabindex="0">To date, I have visited England twice, Italy twice, Switzerland, Mexico, and Canada.</div>
 			<div class="fact italic-fact" tabindex="0">I am definitely a "cat person" and have always had a pet cat my whole life. I am generally uncomfortable around dogs and will never own one as a pet.</div>
 			<div class="fact" tabindex="0">I have been playing music since 2nd grade and can play (in descending order of aptitude) the guitar, piano, bass, and drums. I'd someday like to learn the cello.</div>
+			<div class="fact" tabindex="0">The first website I ever built was a static HTML site for my high school in 2003. Although the site was ugly and horrible, it remained unchanged for the next 10 years.</div>
 			<div class="sizer">&nbsp;</div>
 		</div>
 	</section>

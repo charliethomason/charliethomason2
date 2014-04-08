@@ -8,7 +8,7 @@ Template Name: Homepage
 
 <section class="home-intro" tabindex="0">
 	<h2>Web Developer <span class="fancy-amp">&amp;</span><span class="safe-hide">and</span> Artist from Chicago</h2>
-	<p><span id="intro-greeting">Good morning</span>! My name is Charlie and I'm currently an Associate Presentation Layer Engineer at <a href="http://www.razorfish.com" target="_blank">Razorfish</a>. I specialize in CSS3, JavaScript <span class="fancy-amp">&amp;</span> jQuery, cross-browser compatibility, web accessibility, and responsive design.</p>
+	<p><span id="intro-greeting"></span>My name is Charlie and I'm currently an Associate Presentation Layer Engineer at <a href="http://www.razorfish.com" target="_blank">Razorfish</a>. I specialize in CSS3, JavaScript <span class="fancy-amp">&amp;</span> jQuery, cross-browser compatibility, web accessibility, and responsive design.</p>
 	<p>I published my first photography book, <a href="http://www.blurb.com/b/2868673-open-range" target="_blank"><em>Open Range: From Monument Valley to the Mojave Desert</em></a> in January 2012, and have had paintings, drawings, and photographs featured in numerous exhibitions.</p>
 	<div><a href="about" class="btn">Learn More</a> <a href="contact" class="btn secondary-btn">Contact Me</a></div>
 </section>

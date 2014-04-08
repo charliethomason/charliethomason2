@@ -7,12 +7,12 @@ $(window).load(function() {
 	if($('#intro-greeting').length){
 		var currentTime = new Date();
 		var hours = currentTime.getHours();
-		var greeting = 'Good morning';
+		var greeting = 'Good morning! ';
 		if(hours >= 12) {
 			if(hours >= 18) {
-				greeting = 'Good evening';
+				greeting = 'Good evening! ';
 			} else {
-				greeting = 'Good afternoon';
+				greeting = 'Good afternoon! ';
 			}
 		}
 		$('#intro-greeting').text(greeting);

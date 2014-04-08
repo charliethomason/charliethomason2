@@ -1167,108 +1167,12 @@ section.tags ul.taglist li {
 
 /***************************/
 
-/* BEGIN Loading animation */
-
-#flickr-loading {
-	padding:30px 0 10px;
-}
-
-#flickr-loading p {
-	font-family: monospace;
-	padding:0 0 10px;
-	text-align:center;
-}
-
-#noTrespassingOuterBarG {
-	background-color:#FFFFFF;
-	border:1px solid #000000;
-	height:20px;
-	margin:0 auto;
-	overflow:hidden;
-	width:160px;
-}
-
-.noTrespassingBarLineG {
-	background-color:#000000;
-	float:left;
-	height:120px;
-	margin-right:24px;
-	margin-top:-28px;
-	width:14px;
-	-moz-transform:rotate(45deg);
-	-webkit-transform:rotate(45deg);
-	transform:rotate(45deg);
-}
-
-.noTrespassingAnimationG {
-	width:236px;
-	-moz-animation-name:noTrespassingAnimationG;
-	-moz-animation-duration:1.3s;
-	-moz-animation-iteration-count:infinite;
-	-moz-animation-timing-function:linear;
-	-webkit-animation-name:noTrespassingAnimationG;
-	-webkit-animation-duration:1.3s;
-	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-timing-function:linear;
-	animation-name:noTrespassingAnimationG;
-	animation-duration:1.3s;
-	animation-iteration-count:infinite;
-	animation-timing-function:linear;
-}
-
-#noTrespassingFrontBarG {
-}
-
-@-moz-keyframes noTrespassingAnimationG {
-	0%{
-		margin-left:0px;
-	}
-	100%{
-		margin-left:-38px;
-	}
-}
-
-@-webkit-keyframes noTrespassingAnimationG {
-	0%{
-		margin-left:0px;
-	}
-	100%{
-		margin-left:-38px;
-	}
-}
-
-@keyframes noTrespassingAnimationG {
-	0%{
-		margin-left:0px;
-	}
-	100%{
-		margin-left:-38px;
-	}
-}
-/* END Loading animation */
-
-/***************************/
-
-/* BEGIN Store */
-
-.blog.store {
-	max-width:640px;
-}
-
-.store-list > li {
-	padding-bottom:5px;
-}
-
-.store-list > li > span {
-	font: bold 0.889em/1.5em Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-/* END Store */
-
-/***************************/
-
 /* BEGIN Contact Form */
 
+form.wpcf7-form {
+	margin:0 auto;
+	width:300px;
+}
 form.wpcf7-form label {
 	display:block;
 	padding:10px 0;
@@ -1285,6 +1189,7 @@ form.wpcf7-form input[type=email] {
 	display:block;
 	font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
 	font-size:18px;
+	font-style:normal;
 	height:40px;
 	line-height:40px;
 	margin:0;
@@ -1311,6 +1216,27 @@ form.wpcf7-form input[type=text]:focus,
 form.wpcf7-form input[type=email]:focus,
 form.wpcf7-form textarea:focus {
 	border-color:#539313;
+}
+
+input[type=submit].wpcf7-submit {
+	background: #333333;
+	border:medium none;
+	border-radius: 3px;
+	color: #fff;
+	cursor:pointer;
+	display: inline-block;
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:1em;
+	font-weight:bold;
+	margin:0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	-webkit-appearance:none;
+}
+
+input[type=submit].wpcf7-submit:hover,
+input[type=submit].wpcf7-submit:focus {
+	background: #539313;
 }
 
 /* END Contact Form */

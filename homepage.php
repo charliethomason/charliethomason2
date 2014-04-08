@@ -88,17 +88,7 @@ Template Name: Homepage
 		<h2 class="home-head"><a href="http://flickr.com/recycledfilm" target="_blank" rel="nofollow">Flickr <span class="fancy-amp">&amp;</span> Instagram Gallery</a></h2>
 		<div id="flickr-wrap">
 			<div id="flickr-loading">
-				<p>Loading...</p>
-				<div id="noTrespassingOuterBarG">
-					<div id="noTrespassingFrontBarG" class="noTrespassingAnimationG">
-						<div class="noTrespassingBarLineG"> </div>
-						<div class="noTrespassingBarLineG"> </div>
-						<div class="noTrespassingBarLineG"> </div>
-						<div class="noTrespassingBarLineG"> </div>
-						<div class="noTrespassingBarLineG"> </div>
-						<div class="noTrespassingBarLineG"> </div>
-					</div>
-				</div>
+				<img src="<?php bloginfo('template_directory'); ?>/images/loader.gif" alt="Loading">
 			</div>
 		</div>
 	</section>

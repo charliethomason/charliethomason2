@@ -182,6 +182,7 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 .btn.search-btn {
 	background:url("images/search02.png") no-repeat scroll center center #539313;
+	border:medium none;
 	border-radius:0 3px 3px 0;
 	cursor:pointer;
 	font-size:0;
@@ -194,6 +195,11 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	vertical-align: top;
 	white-space:nowrap;
 	width:30px;
+}
+
+.btn.search-btn:hover,
+.btn.search-btn:focus {
+	background-color:#253B06;
 }
 
 .btn.secondary-btn.cat-btn {
@@ -266,10 +272,6 @@ body {
 	min-width:320px;
 }
 
-#header {
-	margin:0 auto;
-}
-
 #container {
 	margin:0 auto;
 	width:100%;
@@ -296,7 +298,7 @@ body {
 #header {
 	margin:0 auto;
 	max-width:500px;
-	padding:100px 0 20px;
+	padding:90px 0 5px;
 	text-align:center;
 }
 
@@ -386,23 +388,6 @@ ul.nav-social a {
 	padding:10px;
 }
 
-/* Responsive Nav */
-
-#header h1 a#mobile-logo {
-	background-image: none;
-	display:none;
-	height:auto;
-	padding:0 1.7%; /* 10 */
-	width:auto;
-}
-
-#header h1 a#mobile-logo > img {
-	display: block;
-	height:auto;
-	margin:0 auto;
-	max-width:100%;
-}
-
 #hamburger {
 	color:#fff;
 	display:none;
@@ -427,6 +412,10 @@ ul.nav-social a {
 	outline:0 none;
 	padding:0 20px 40px;
 	text-align:center;
+}
+
+.home-intro img {
+	margin:0 0 10px;
 }
 
 .home-intro p {
@@ -859,10 +848,6 @@ article.post a.more-link {
 /***************************/
 
 /* BEGIN Gallery Styles */
-
-.blog-gallery {
-	padding:10px 0;
-}
 
 .index-head {
 	background-color: #000;

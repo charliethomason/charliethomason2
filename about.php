@@ -42,7 +42,7 @@ Template Name: About Page
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/handlebars-01.png" alt="Handlebars logo" />Handlebars.js</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/bootstrap-01.png" alt="Bootstrap logo" />Bootstrap, Foundation</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/grunt-01.png" alt="Grunt logo" />Grunt</li>
-						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/git-01.png" alt="Git logo" />Git, SVN</li>
+						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/git-01.png" alt="Git logo" />Git, SVN	</li>
 						<li><img src="<?php bloginfo('template_directory'); ?>/images/skills/ps-02.png" alt="Photoshop logo" />Adobe Creative Suite</li>
 					</div>
 					<div class="clear"></div>

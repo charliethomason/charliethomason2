@@ -10,7 +10,7 @@ Template Name: Homepage
 	<img src="<?php bloginfo('template_directory'); ?>/images/cthomason03_circle01.png" alt="Charlie Thomason">
 	<h2>Charlie Thomason is a Web Developer <span class="fancy-amp">&amp;</span><span class="safe-hide">and</span> Artist from Chicago.</h2>
 	<p>He is currently an Associate Presentation Layer Engineer at <a href="http://www.razorfish.com" target="_blank">Razorfish</a> and specializes in CSS3, JavaScript <span class="fancy-amp">&amp;</span> jQuery, cross-browser compatibility, web accessibility, and responsive design.</p>
-	<p>Charlie published my first photography book, <a href="http://www.blurb.com/b/2868673-open-range" target="_blank"><em>Open Range: From Monument Valley to the Mojave Desert</em></a> in January 2012, and has had paintings, drawings, and photographs featured in numerous exhibitions.</p>
+	<p>Charlie published his first photography book, <a href="http://www.blurb.com/b/2868673-open-range" target="_blank"><em>Open Range: From Monument Valley to the Mojave Desert</em></a> in January 2012, and has had paintings, drawings, and photographs featured in numerous exhibitions.</p>
 	<div><a href="about" class="btn">Learn More</a> <a href="contact" class="btn secondary-btn">Contact</a></div>
 </section>
 

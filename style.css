@@ -849,6 +849,14 @@ article.post a.more-link {
 
 /* BEGIN Gallery Styles */
 
+.blog-gallery {
+	padding:10px 0;
+}
+
+.art-blog {
+	padding-left:2.4%;
+	padding-right:2.4%;
+}
 .index-head {
 	background-color: #000;
 	color:#fff;
